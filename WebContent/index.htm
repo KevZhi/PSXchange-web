@@ -1,0 +1,148 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PSXchange</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+  <h2 class="header"><a href="index.jsp">PSXchange</a></h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="new.jsp">
+            <%@ include file="/findps4.jsp"%>
+		
+			     &nbsp;&nbsp;&nbsp;&nbsp;
+			     <%@ include file="/WEB-INF/head.jsp"%>
+			     </form>
+              </div>
+              </div>
+            </nav>
+<hr>
+<nav class="col-lg-3 col-xl-9">
+  <h2 class="offset-lg-2 col-lg-11 text-left offset-xl-1 col-xl-11"><a href="index.jsp" class="aheader">最近正流行</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class=unselected href=allgames.jsp>全部游戏</a></h2>
+</nav>
+<hr>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img src="ps4_image/darksouls.jpeg" alt="Card image cap" width="240" class="card-img-top rounded">
+            <div class="card-body">
+              <h5 class="card-title">
+	            Dark Souls Remastered
+              </h5>
+              <p class="card-text">BANDAI NAMCO</p>
+              <form action="gamedetail.jsp">
+              <input class="form-control mr-sm-2" name="findContent" type="search" style="display:none;" value="c" aria-label="Search">
+				<select name="condition" style="display:none;">
+					<option Selected value="number"></select>
+               <input	type="radio" name="findMethod" value="contains"  style="display:none" checked="checked">
+               <button class="btn btn-lg btn-primary btn-block" type="submit">查看详情</button></form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img src="ps4_image/detroit.jpeg" alt="Card image cap" width="240" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" id=2nd>Detroit : Become Human</h5>
+              <p class="card-text">Quantic Dream</p>
+              <form action="gamedetail.jsp">
+              <input class="form-control mr-sm-2" name="findContent" type="search" style="display:none;" value="b" aria-label="Search">
+				<select name="condition" style="display:none;">
+					<option Selected value="number"></select>
+               <input	type="radio" name="findMethod" value="contains"  style="display:none" checked="checked">
+               <button class="btn btn-lg btn-primary btn-block" type="submit">查看详情</button></form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img src="ps4_image/mhw.jpeg" alt="Card image cap" width="240" class="card-img-top rounded">
+            <div class="card-body">
+              <h5 class="card-title">MONSTER HUNTER : WORLD</h5>
+              <p class="card-text">CAPCOM</p>
+              <form action="gamedetail.jsp">
+              <input class="form-control mr-sm-2" name="findContent" type="search" style="display:none;" value="i" aria-label="Search">
+				<select name="condition" style="display:none;">
+					<option Selected value="number"></select>
+               <input	type="radio" name="findMethod" value="contains"  style="display:none" checked="checked">
+               <button class="btn btn-lg btn-primary btn-block" type="submit">查看详情</button></form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <div class="row text-center mt-4">
+      
+        <div class="col-md-4 pb-1 pb-md-0">
+        <a href="newsecondhand.jsp">
+          <div class="card">
+            <img class="card-img-top" src="ps4_image/exchange.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">发布新二手 </h5>
+            </div>
+          </div>
+          </a>
+        </div>
+        
+        <div class="col-md-4 pb-1 pb-md-0">
+        <a href="newexchange.jsp">
+          <div class="card">
+            <img class="card-img-top" src="ps4_image/swap.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">发布新交换</h5>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+        <a href="newrent.jsp">
+          <div class="card">
+            <img class="card-img-top" src="ps4_image/rent.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">发布友情转让</h5>
+            </div>
+			  
+          </div>
+          </a>
+        </div>
+      </div>
+      
+   
+	<br>
+	<br>
+    </div>
+<hr>
+<footer class="text-center">
+  <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class=footer>免责声明：本网站为爱好者成立的游戏交换网站，仅提供信息展示服务，在本网站进行的一切交易出现纠纷本站概不负责</p>
+            <p class=footer>本站与所提供的服务于Sony Interactive Entertainment无关</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>
